@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c746f76f17c51bd1bb07a625f9c5b3a6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c746f76f17c51bd1bb07a625f9c5b3a6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c746f76f17c51bd1bb07a625f9c5b3a6 = L.map(
+                "map_c746f76f17c51bd1bb07a625f9c5b3a6",
+                {
+                    center: [48.8511944, 2.3403301],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5f0680117715070048f500fa9f53eaca = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5f0680117715070048f500fa9f53eaca.addTo(map_c746f76f17c51bd1bb07a625f9c5b3a6);
+        
+    
+            var marker_d843eead42cc6dde5a4b3b0ef0adaef8 = L.marker(
+                [48.8511944, 2.3403301],
+                {
+}
+            ).addTo(map_c746f76f17c51bd1bb07a625f9c5b3a6);
+        
+    
+            var icon_6e0f228ef9e394e92d12e2472efbf534 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e86418d529297f3bd36f508e733c7b9c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aeed7b4ee3a5a98d893a4eca70a7fad4 = $(`<div id="html_aeed7b4ee3a5a98d893a4eca70a7fad4" style="width: 100.0%; height: 100.0%;">🏫 <b>Sorbonne Université</b><br>21 rue de l’École de médecine, 75006 Paris 6e, France</div>`)[0];
+                popup_e86418d529297f3bd36f508e733c7b9c.setContent(html_aeed7b4ee3a5a98d893a4eca70a7fad4);
+            
+        
+
+        marker_d843eead42cc6dde5a4b3b0ef0adaef8.bindPopup(popup_e86418d529297f3bd36f508e733c7b9c)
+        ;
+
+        
+    
+    
+                marker_d843eead42cc6dde5a4b3b0ef0adaef8.setIcon(icon_6e0f228ef9e394e92d12e2472efbf534);
+            
+    
+            var marker_623f210f38c827d3b88155d28ad1eac6 = L.marker(
+                [48.8539042, 2.3390873],
+                {
+}
+            ).addTo(map_c746f76f17c51bd1bb07a625f9c5b3a6);
+        
+    
+            var icon_2f4dbb25a32fa7adccf9d02834148735 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cdae0175a03da773ebbb35ec8525a464 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_d97fb77a906c1ab9761d0430c9d01955 = $(`<div id="html_d97fb77a906c1ab9761d0430c9d01955" style="width: 100.0%; height: 100.0%;"><b>🏠 (CROUS)</b> Résidence Mazet<br>5-5 bis rue Mazet 75006 Paris<br>📏 315 m</div>`)[0];
+                popup_cdae0175a03da773ebbb35ec8525a464.setContent(html_d97fb77a906c1ab9761d0430c9d01955);
+            
+        
+
+        marker_623f210f38c827d3b88155d28ad1eac6.bindPopup(popup_cdae0175a03da773ebbb35ec8525a464)
+        ;
+
+        
+    
+    
+                marker_623f210f38c827d3b88155d28ad1eac6.setIcon(icon_2f4dbb25a32fa7adccf9d02834148735);
+            
+    
+            var marker_f331daab6713882d09e66c09a406d017 = L.marker(
+                [48.8492548, 2.3477207],
+                {
+}
+            ).addTo(map_c746f76f17c51bd1bb07a625f9c5b3a6);
+        
+    
+            var icon_b4a5b396a7ea0a53e82e628dccd1f274 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bdfb1c9ae9a890568204b91a7f0024fa = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_ffab7fb11ded68943086dfc10206a743 = $(`<div id="html_ffab7fb11ded68943086dfc10206a743" style="width: 100.0%; height: 100.0%;"><b>🏠 (CROUS)</b> Résidence les Carmes<br>3 rue des Carmes 75005 Paris<br>📏 584 m</div>`)[0];
+                popup_bdfb1c9ae9a890568204b91a7f0024fa.setContent(html_ffab7fb11ded68943086dfc10206a743);
+            
+        
+
+        marker_f331daab6713882d09e66c09a406d017.bindPopup(popup_bdfb1c9ae9a890568204b91a7f0024fa)
+        ;
+
+        
+    
+    
+                marker_f331daab6713882d09e66c09a406d017.setIcon(icon_b4a5b396a7ea0a53e82e628dccd1f274);
+            
+    
+            var marker_08eaf1f642558fa79b68d78e0e1da87c = L.marker(
+                [48.85149, 2.339593],
+                {
+}
+            ).addTo(map_c746f76f17c51bd1bb07a625f9c5b3a6);
+        
+    
+            var icon_75e04f19d4194ee34b317d6b40c465b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_808698b06f100e2e151fd64e9a9c17e6 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_1c39d82cde544bae3eb657492479f458 = $(`<div id="html_1c39d82cde544bae3eb657492479f458" style="width: 100.0%; height: 100.0%;"><b>🏠 (Non-CROUS)</b><br>RUE DUPUYTREN<br>📏 63 m</div>`)[0];
+                popup_808698b06f100e2e151fd64e9a9c17e6.setContent(html_1c39d82cde544bae3eb657492479f458);
+            
+        
+
+        marker_08eaf1f642558fa79b68d78e0e1da87c.bindPopup(popup_808698b06f100e2e151fd64e9a9c17e6)
+        ;
+
+        
+    
+    
+                marker_08eaf1f642558fa79b68d78e0e1da87c.setIcon(icon_75e04f19d4194ee34b317d6b40c465b9);
+            
+    
+            var marker_5f3b797fc7779bb2d526ebe261ce0bc9 = L.marker(
+                [48.851459, 2.339327],
+                {
+}
+            ).addTo(map_c746f76f17c51bd1bb07a625f9c5b3a6);
+        
+    
+            var icon_6d1c594bfb79ef30eb4adaf2ca21dc2b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd185306ff8173f3aa96e144160df0e8 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_450f94aaf4de99dce56f1274ac78482d = $(`<div id="html_450f94aaf4de99dce56f1274ac78482d" style="width: 100.0%; height: 100.0%;"><b>🏠 (Non-CROUS)</b><br>RUE MONSIEUR LE PRINCE<br>📏 79 m</div>`)[0];
+                popup_fd185306ff8173f3aa96e144160df0e8.setContent(html_450f94aaf4de99dce56f1274ac78482d);
+            
+        
+
+        marker_5f3b797fc7779bb2d526ebe261ce0bc9.bindPopup(popup_fd185306ff8173f3aa96e144160df0e8)
+        ;
+
+        
+    
+    
+                marker_5f3b797fc7779bb2d526ebe261ce0bc9.setIcon(icon_6d1c594bfb79ef30eb4adaf2ca21dc2b);
+            
+    
+            var marker_dc6b66e74988e40b6451bead9fee7254 = L.marker(
+                [48.851052, 2.33903],
+                {
+}
+            ).addTo(map_c746f76f17c51bd1bb07a625f9c5b3a6);
+        
+    
+            var icon_16e6aedf346f3966e70f793c52090715 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ad09a88ed20b6d6939f057f125a7053e = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_45db32ff558dd98774f2bc895c75bd2a = $(`<div id="html_45db32ff558dd98774f2bc895c75bd2a" style="width: 100.0%; height: 100.0%;"><b>🏠 (Non-CROUS)</b><br>RUE DE L ODEON<br>📏 97 m</div>`)[0];
+                popup_ad09a88ed20b6d6939f057f125a7053e.setContent(html_45db32ff558dd98774f2bc895c75bd2a);
+            
+        
+
+        marker_dc6b66e74988e40b6451bead9fee7254.bindPopup(popup_ad09a88ed20b6d6939f057f125a7053e)
+        ;
+
+        
+    
+    
+                marker_dc6b66e74988e40b6451bead9fee7254.setIcon(icon_16e6aedf346f3966e70f793c52090715);
+            
+    
+            var marker_e3073b9902ef1c1c337a54597cde4d44 = L.marker(
+                [48.851744, 2.339098],
+                {
+}
+            ).addTo(map_c746f76f17c51bd1bb07a625f9c5b3a6);
+        
+    
+            var icon_582828bf8833c25f767ad958e37c1e7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5c2e00688cf7778da3a334803a56f68e = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_9efb844db2a4cd608826a4eda655f367 = $(`<div id="html_9efb844db2a4cd608826a4eda655f367" style="width: 100.0%; height: 100.0%;"><b>🏠 (Non-CROUS)</b><br>RUE MONSIEUR LE PRINCE<br>📏 109 m</div>`)[0];
+                popup_5c2e00688cf7778da3a334803a56f68e.setContent(html_9efb844db2a4cd608826a4eda655f367);
+            
+        
+
+        marker_e3073b9902ef1c1c337a54597cde4d44.bindPopup(popup_5c2e00688cf7778da3a334803a56f68e)
+        ;
+
+        
+    
+    
+                marker_e3073b9902ef1c1c337a54597cde4d44.setIcon(icon_582828bf8833c25f767ad958e37c1e7f);
+            
+    
+            var marker_232de11eec724c5188cd7b6a08b47280 = L.marker(
+                [48.850238, 2.339446],
+                {
+}
+            ).addTo(map_c746f76f17c51bd1bb07a625f9c5b3a6);
+        
+    
+            var icon_075723fe13e9882cab53746461406c83 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d5a267dd20cb46d3b6ab862e9ee744e = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_35841a772a56a6a29965f07949f5a6d8 = $(`<div id="html_35841a772a56a6a29965f07949f5a6d8" style="width: 100.0%; height: 100.0%;"><b>🏠 (Non-CROUS)</b><br>RUE CASIMIR DELAVIGNE<br>📏 125 m</div>`)[0];
+                popup_7d5a267dd20cb46d3b6ab862e9ee744e.setContent(html_35841a772a56a6a29965f07949f5a6d8);
+            
+        
+
+        marker_232de11eec724c5188cd7b6a08b47280.bindPopup(popup_7d5a267dd20cb46d3b6ab862e9ee744e)
+        ;
+
+        
+    
+    
+                marker_232de11eec724c5188cd7b6a08b47280.setIcon(icon_075723fe13e9882cab53746461406c83);
+            
+    
+            var marker_cbb624d414ed7107e5632d5cdf91aa0f = L.marker(
+                [48.851025, 2.338461],
+                {
+}
+            ).addTo(map_c746f76f17c51bd1bb07a625f9c5b3a6);
+        
+    
+            var icon_7951ceb328aa4c7237b4f11302441f50 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c11e1e5b20ce6949641ea0b8fbd50515 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_1dbf76077792865bbfb4f0df79180469 = $(`<div id="html_1dbf76077792865bbfb4f0df79180469" style="width: 100.0%; height: 100.0%;"><b>🏠 (Non-CROUS)</b><br>RUE DE L ODEON<br>📏 138 m</div>`)[0];
+                popup_c11e1e5b20ce6949641ea0b8fbd50515.setContent(html_1dbf76077792865bbfb4f0df79180469);
+            
+        
+
+        marker_cbb624d414ed7107e5632d5cdf91aa0f.bindPopup(popup_c11e1e5b20ce6949641ea0b8fbd50515)
+        ;
+
+        
+    
+    
+                marker_cbb624d414ed7107e5632d5cdf91aa0f.setIcon(icon_7951ceb328aa4c7237b4f11302441f50);
+            
+    
+            var marker_6ed433c65021825bab441eeb351fc25a = L.marker(
+                [48.852197, 2.341458],
+                {
+}
+            ).addTo(map_c746f76f17c51bd1bb07a625f9c5b3a6);
+        
+    
+            var icon_cb320e244143469fdcbb9f532a59b3a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4422a4a2853c2ca26ebc516c53f607d4 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_4a5f46db304cd347c64899c9d673715c = $(`<div id="html_4a5f46db304cd347c64899c9d673715c" style="width: 100.0%; height: 100.0%;"><b>🏠 (Non-CROUS)</b><br>RUE DANTON<br>📏 139 m</div>`)[0];
+                popup_4422a4a2853c2ca26ebc516c53f607d4.setContent(html_4a5f46db304cd347c64899c9d673715c);
+            
+        
+
+        marker_6ed433c65021825bab441eeb351fc25a.bindPopup(popup_4422a4a2853c2ca26ebc516c53f607d4)
+        ;
+
+        
+    
+    
+                marker_6ed433c65021825bab441eeb351fc25a.setIcon(icon_cb320e244143469fdcbb9f532a59b3a4);
+            
+    
+            var marker_32bf95ca1eec1304cec361c4a79ae483 = L.marker(
+                [48.852029, 2.338869],
+                {
+}
+            ).addTo(map_c746f76f17c51bd1bb07a625f9c5b3a6);
+        
+    
+            var icon_0cfdb0f197d67bb46071861688fd8900 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ef63cc77fc138ef6899a95b4009de0c3 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_2da9951193fe3041f149a212d39a397a = $(`<div id="html_2da9951193fe3041f149a212d39a397a" style="width: 100.0%; height: 100.0%;"><b>🏠 (Non-CROUS)</b><br>CAR DE L ODEON<br>📏 142 m</div>`)[0];
+                popup_ef63cc77fc138ef6899a95b4009de0c3.setContent(html_2da9951193fe3041f149a212d39a397a);
+            
+        
+
+        marker_32bf95ca1eec1304cec361c4a79ae483.bindPopup(popup_ef63cc77fc138ef6899a95b4009de0c3)
+        ;
+
+        
+    
+    
+                marker_32bf95ca1eec1304cec361c4a79ae483.setIcon(icon_0cfdb0f197d67bb46071861688fd8900);
+            
+    
+            var marker_40e0a304fb88cdb4e52d1089b3395d74 = L.marker(
+                [48.85193594204864, 2.3406130064065174],
+                {
+}
+            ).addTo(map_c746f76f17c51bd1bb07a625f9c5b3a6);
+        
+    
+            var icon_6ba1dd22e08db0d8c9b861ab209f3449 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "train",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_40e0a304fb88cdb4e52d1089b3395d74.bindTooltip(
+                `<div>
+                     🚉 Odéon — 85 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_40e0a304fb88cdb4e52d1089b3395d74.setIcon(icon_6ba1dd22e08db0d8c9b861ab209f3449);
+            
+    
+            var marker_7ddba7c25eb6b1907c1be1f8bf281118 = L.marker(
+                [48.852300763107934, 2.3397277815930995],
+                {
+}
+            ).addTo(map_c746f76f17c51bd1bb07a625f9c5b3a6);
+        
+    
+            var icon_c9ed1e6523ccad79296ef5b09a90f308 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "train",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_7ddba7c25eb6b1907c1be1f8bf281118.bindTooltip(
+                `<div>
+                     🚉 Odéon — 131 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7ddba7c25eb6b1907c1be1f8bf281118.setIcon(icon_c9ed1e6523ccad79296ef5b09a90f308);
+            
+    
+            var marker_1579d13ed1f675f9b2d853bf496b43e9 = L.marker(
+                [48.85211888264464, 2.3440211520552428],
+                {
+}
+            ).addTo(map_c746f76f17c51bd1bb07a625f9c5b3a6);
+        
+    
+            var icon_a4a8099c6c8fbb4151aba446e08be1ab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "train",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_1579d13ed1f675f9b2d853bf496b43e9.bindTooltip(
+                `<div>
+                     🚉 Saint-Michel — 290 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1579d13ed1f675f9b2d853bf496b43e9.setIcon(icon_a4a8099c6c8fbb4151aba446e08be1ab);
+            
+</script>
+</html>
