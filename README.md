@@ -72,7 +72,7 @@ pip install -r requirements.txt
 jupyter lab logement_etudiant_idf.ipynb   # puis « Run All »
 ```
 
-Les widgets et les cartes Folium ne s'affichent pas dans l'aperçu GitHub. Il faut exécuter le notebook dans Jupyter ou Google Colab pour les utiliser. Les captures ci-dessus montrent le rendu obtenu.
+Les widgets et les cartes Folium ne s'affichent pas dans l'aperçu GitHub. Il faut exécuter le notebook dans Jupyter ou Google Colab pour les utiliser. Deux cartes interactives sont aussi exportées dans [`cartes/`](cartes) : télécharger le fichier HTML et l'ouvrir dans un navigateur.
 
 ## Auteurs
 
