@@ -10,6 +10,8 @@ Projet de groupe du module **Data Science** du cycle ingénieur de l'ECE Paris (
 
 📓 [`logement_etudiant_idf.ipynb`](logement_etudiant_idf.ipynb)
 
+**▶ Cartes interactives en ligne :** [huggingface.co/spaces/edouardmnt04/logement-etudiant-idf-cartes](https://huggingface.co/spaces/edouardmnt04/logement-etudiant-idf-cartes)
+
 **Stack :** Python · pandas · NumPy · Folium (cartes, heatmap) · ipywidgets · Matplotlib / Seaborn · geopy · pyproj
 
 ---
