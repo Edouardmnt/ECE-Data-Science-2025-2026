@@ -76,6 +76,6 @@ Les widgets et les cartes Folium ne s'affichent pas dans l'aperçu GitHub. Il fa
 
 ## Auteurs
 
-Projet de groupe, avec **Édouard Menut, Chloé Lestic, Clara chalayer**.
+Projet de groupe : **Clara Chalayer**, **Chloé Lestic** et **Édouard Menut**.
 
-Autres projets : [Machine Learning](https://github.com/Edouardmnt/ECE-Machine-Learning-2025-2026) · [Data Mining](https://github.com/Edouardmnt/ECE-Data-Mining-2025-2026) · [Big Data](https://github.com/Edouardmnt/ECE-Big-Data-2025-2026)
+Autres projets d'Édouard : [Machine Learning](https://github.com/Edouardmnt/ECE-Machine-Learning-2025-2026) · [Data Mining](https://github.com/Edouardmnt/ECE-Data-Mining-2025-2026) · [Big Data](https://github.com/Edouardmnt/ECE-Big-Data-2025-2026)
